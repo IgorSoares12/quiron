@@ -1,0 +1,715 @@
+{
+	"info": {
+		"_postman_id": "082657eb-ae21-4906-ab81-64b581ad973e",
+		"name": "Quiron",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Espaco",
+			"item": [
+				{
+					"name": "/Espaco all",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "33d904b6-338a-48c9-b14f-7c521454175a",
+								"exec": [
+									"tests[\"status é igual a 200\"] = responseCode.code === 200;",
+									"",
+									"try { ",
+									"    responseJSON = JSON.parse(responseBody); ",
+									"    tests['resposta é um JSON válido'] = true;",
+									"}",
+									"catch (e) { ",
+									"    responseJSON = {}; ",
+									"    tests['resposta não é um JSON válido'] = false;",
+									"}",
+									"",
+									"pm.environment.set(\"idTest\", responseJSON[0].id);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/Espaco",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Espaco"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/OData/Espaco all",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "33d904b6-338a-48c9-b14f-7c521454175a",
+								"exec": [
+									"tests[\"status é igual a 200\"] = responseCode.code === 200;",
+									"",
+									"try { ",
+									"    responseJSON = JSON.parse(responseBody); ",
+									"    tests['resposta é um JSON válido'] = true;",
+									"}",
+									"catch (e) { ",
+									"    responseJSON = {}; ",
+									"    tests['resposta não é um JSON válido'] = false;",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/OData/Espaco",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"OData",
+								"Espaco"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/OData/Espaco?$top=1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "33d904b6-338a-48c9-b14f-7c521454175a",
+								"exec": [
+									"tests[\"status é igual a 200\"] = responseCode.code === 200;",
+									"",
+									"try { ",
+									"    responseJSON = JSON.parse(responseBody); ",
+									"    tests['resposta é um JSON válido'] = true;",
+									"}",
+									"catch (e) { ",
+									"    responseJSON = {}; ",
+									"    tests['resposta não é um JSON válido'] = false;",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/OData/Espaco?$top=1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"OData",
+								"Espaco"
+							],
+							"query": [
+								{
+									"key": "$top",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/OData/Espaco?$skip=2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "33d904b6-338a-48c9-b14f-7c521454175a",
+								"exec": [
+									"tests[\"status é igual a 200\"] = responseCode.code === 200;",
+									"",
+									"try { ",
+									"    responseJSON = JSON.parse(responseBody); ",
+									"    tests['resposta é um JSON válido'] = true;",
+									"}",
+									"catch (e) { ",
+									"    responseJSON = {}; ",
+									"    tests['resposta não é um JSON válido'] = false;",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/OData/Espaco?$skip=2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"OData",
+								"Espaco"
+							],
+							"query": [
+								{
+									"key": "$skip",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/OData/Espaco?$count=true",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "33d904b6-338a-48c9-b14f-7c521454175a",
+								"exec": [
+									"tests[\"status é igual a 200\"] = responseCode.code === 200;",
+									"",
+									"try { ",
+									"    responseJSON = JSON.parse(responseBody); ",
+									"    tests['resposta é um JSON válido'] = true;",
+									"}",
+									"catch (e) { ",
+									"    responseJSON = {}; ",
+									"    tests['resposta não é um JSON válido'] = false;",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/OData/Espaco?$count=true",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"OData",
+								"Espaco"
+							],
+							"query": [
+								{
+									"key": "$count",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/OData/Espaco?$select=descricao",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "33d904b6-338a-48c9-b14f-7c521454175a",
+								"exec": [
+									"tests[\"status é igual a 200\"] = responseCode.code === 200;",
+									"",
+									"try { ",
+									"    responseJSON = JSON.parse(responseBody); ",
+									"    tests['resposta é um JSON válido.'] = true;",
+									"}",
+									"catch (e) { ",
+									"    responseJSON = {}; ",
+									"    tests['resposta não é um JSON válido.'] = false;",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/OData/Espaco?$select=descricao",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"OData",
+								"Espaco"
+							],
+							"query": [
+								{
+									"key": "$select",
+									"value": "descricao"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/OData/Espaco?$filter=id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "33d904b6-338a-48c9-b14f-7c521454175a",
+								"exec": [
+									"tests[\"status é igual a 200\"] = responseCode.code === 200;",
+									"",
+									"try { ",
+									"    responseJSON = JSON.parse(responseBody); ",
+									"    tests['resposta é um JSON válido'] = true;",
+									"}",
+									"catch (e) { ",
+									"    responseJSON = {}; ",
+									"    tests['resposta não é um JSON válido'] = false;",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/OData/Espaco?$filter=id eq {{idTest}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"OData",
+								"Espaco"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "id eq {{idTest}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/Espaco/{id} by id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "33d904b6-338a-48c9-b14f-7c521454175a",
+								"exec": [
+									"tests[\"status é igual a 200\"] = responseCode.code === 200;",
+									"",
+									"try { ",
+									"    responseJSON = JSON.parse(responseBody); ",
+									"    tests['resposta é um JSON válido'] = true;",
+									"}",
+									"catch (e) { ",
+									"    responseJSON = {}; ",
+									"    tests['resposta não é um JSON válido'] = false;",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/Espaco/{{idTest}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Espaco",
+								"{{idTest}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/Espaco/{id} not found",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "33d904b6-338a-48c9-b14f-7c521454175a",
+								"exec": [
+									"tests[\"status é igual a 404\"] = responseCode.code === 404;",
+									"",
+									"try { ",
+									"    responseJSON = JSON.parse(responseBody); ",
+									"    tests['resposta é um JSON válido'] = true;",
+									"}",
+									"catch (e) { ",
+									"    responseJSON = {}; ",
+									"    tests['resposta não é um JSON válido'] = false;",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/Espaco/00000000-0000-0000-0000-000000000000",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Espaco",
+								"00000000-0000-0000-0000-000000000000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/Espaco new",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "33d904b6-338a-48c9-b14f-7c521454175a",
+								"exec": [
+									"tests[\"status é igual a 200\"] = responseCode.code === 200;"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"descricao\": \"teste post api\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/Espaco",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Espaco"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/Espaco new required field",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "33d904b6-338a-48c9-b14f-7c521454175a",
+								"exec": [
+									"tests[\"status é igual a 400\"] = responseCode.code === 400;"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/Espaco",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Espaco"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/Espaco edit",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "33d904b6-338a-48c9-b14f-7c521454175a",
+								"exec": [
+									"tests[\"status é igual a 200\"] = responseCode.code === 200;"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": \"{{idTest}}\",\r\n  \"descricao\": \"teste put api\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/Espaco",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Espaco"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/Espaco edit not found database",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "33d904b6-338a-48c9-b14f-7c521454175a",
+								"exec": [
+									"tests[\"status é igual a 404\"] = responseCode.code === 404;",
+									"",
+									"try { ",
+									"    responseJSON = JSON.parse(responseBody); ",
+									"    tests['resposta é um JSON válido'] = true;",
+									"}",
+									"catch (e) { ",
+									"    responseJSON = {}; ",
+									"    tests['resposta não é um JSON válido'] = false;",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": \"00000000-0000-0000-0000-000000000000\",\r\n  \"descricao\": \"teste put api\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/Espaco",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Espaco"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/Espaco edit not found field",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "33d904b6-338a-48c9-b14f-7c521454175a",
+								"exec": [
+									"tests[\"status é igual a 404\"] = responseCode.code === 404;",
+									"",
+									"try { ",
+									"    responseJSON = JSON.parse(responseBody); ",
+									"    tests['resposta é um JSON válido'] = true;",
+									"}",
+									"catch (e) { ",
+									"    responseJSON = {}; ",
+									"    tests['resposta não é um JSON válido'] = false;",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"descricao\": \"teste put api\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/Espaco",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Espaco"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/Espaco/{id} delete",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "33d904b6-338a-48c9-b14f-7c521454175a",
+								"exec": [
+									"tests[\"status é igual a 200\"] = responseCode.code === 200;"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/Espaco/{{idTest}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Espaco",
+								"{{idTest}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/Espaco/{id} delete not fount",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "33d904b6-338a-48c9-b14f-7c521454175a",
+								"exec": [
+									"tests[\"status é igual a 404\"] = responseCode.code === 404;"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/Espaco/00000000-0000-0000-0000-000000000000",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Espaco",
+								"00000000-0000-0000-0000-000000000000"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
