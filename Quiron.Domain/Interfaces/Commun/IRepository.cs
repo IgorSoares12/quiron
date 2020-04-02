@@ -16,6 +16,8 @@ namespace Quiron.Domain.Interfaces.Commun
 
         TModel FindBy(Expression<Func<TModel, bool>> predicate);
 
+        TModel FindById(Guid id);
+
         IQueryable<TModel> FindAllBy(Expression<Func<TModel, bool>> predicate);
     }
 }
