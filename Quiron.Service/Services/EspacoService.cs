@@ -33,7 +33,7 @@ namespace Quiron.Service.Services
             => _espacoRepository.GetAll().ProjectTo<EspacoDto>(_mapper.ConfigurationProvider);
 
         public EspacoDto FindById(Guid id)
-            => _mapper.Map<EspacoDto>(_espacoRepository.FindBy(e => e.Id.Equals(id)));
+            => _mapper.Map<EspacoDto>(_espacoRepository.FindById(id));
 
         public EspacoDto FindByDescricao(string descricao)
             => _mapper.Map<EspacoDto>(_espacoRepository.FindBy(e => e.Descricao.Equals(descricao)));

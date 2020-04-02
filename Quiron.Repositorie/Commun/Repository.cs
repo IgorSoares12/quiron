@@ -41,6 +41,9 @@ namespace Quiron.Data.Commun
         public TModel FindBy(Expression<Func<TModel, bool>> predicate)
             => _context.Set<TModel>().Where(predicate).FirstOrDefault();
 
+        public TModel FindById(Guid id)
+            => FindBy(t => t.Id.Equals(id));
+
         public IQueryable<TModel> FindAllBy(Expression<Func<TModel, bool>> predicate)
             => _context.Set<TModel>().Where(predicate).AsQueryable();
 

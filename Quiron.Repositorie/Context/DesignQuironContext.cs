@@ -7,7 +7,7 @@ namespace Quiron.Data.Context
     {
         public QuironContext CreateDbContext(string[] args)
         {
-            var local = @"Data Source=FTS-DEV-GTF-03\SQLEXPRESS;Initial Catalog=Quiron;Persist Security Info=True;User ID=gm;Password=1234";
+            var local = @"Data Source=GLERYSTON-PC\SQLEXPRESS;Initial Catalog=Quiron;Persist Security Info=True;User ID=sa;Password=1234";
             DbContextOptionsBuilder<QuironContext> builder = new DbContextOptionsBuilder<QuironContext>();
             builder.UseSqlServer(local);
             return new QuironContext(builder.Options);

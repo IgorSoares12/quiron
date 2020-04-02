@@ -6,7 +6,6 @@ using Quiron.Domain.Interfaces.Data;
 using Quiron.Domain.Interfaces.Services;
 using Quiron.Service.Services;
 using QuironNUnitTest.Comun;
-using System.Linq;
 
 namespace QuironNUnitTest.Services
 {
@@ -29,9 +28,7 @@ namespace QuironNUnitTest.Services
             EspacoDto espaco = new EspacoDto("Espaço Teste Create");
             _espacoService.Create(espaco);
 
-            EspacoDto novoEspaco = _espacoService.FindById(espaco.Id);
-
-            Assert.IsNotNull(novoEspaco, "Espaço não foi cadastrado.");
+            Assert.IsNotNull(_espacoService.FindById(espaco.Id));
         }
 
         [Test]
@@ -40,35 +37,27 @@ namespace QuironNUnitTest.Services
             EspacoDto espaco = new EspacoDto("Espaço Teste Update");
             _espacoService.Create(espaco);
 
-            EspacoDto espacoCriado = _espacoService.FindById(espaco.Id);
-            espacoCriado.Descricao = "Espaco Atualizado";
+            espaco.Descricao = "Espaco Atualizado";
 
-            _espacoService.Update(espacoCriado);
-            EspacoDto espacoAtualizado = _espacoService.FindByDescricao("Espaco Atualizado");
+            _espacoService.Update(espaco);
+            EspacoDto espacoAtualizada = _espacoService.FindById(espaco.Id);
 
-            Assert.IsNotNull(espacoAtualizado, "Espaço não foi atualizado.");
+            Assert.IsTrue(espacoAtualizada.Descricao.Equals("Espaco Atualizado"));
         }
 
         [Test]
         public void RemoveTest()
         {
-            EspacoDto espaco = new EspacoDto("Espaço Teste Update");
+            EspacoDto espaco = new EspacoDto("Espaço Teste Remove");
             _espacoService.Create(espaco);
 
-            EspacoDto espacoCriado = _espacoService.FindById(espaco.Id);
-
-            _espacoService.Remove(espacoCriado);
-            EspacoDto espacoRemovido = _espacoService.FindById(espaco.Id);
-
-            Assert.IsNull(espacoRemovido, "Espaço não foi removido.");
+            _espacoService.Remove(espaco);
+            Assert.IsNull(_espacoService.FindById(espaco.Id));
         }
 
         [Test]
         public void GetAllTest()
-        {
-            IQueryable<EspacoDto> espacos = _espacoService.GetAll();
-            Assert.IsNotNull(espacos, "Não foram retornados todos os espaços.");
-        }
+            => Assert.IsNotNull(_espacoService.GetAll());
 
         [Test]
         public void FindByIdTest()
@@ -76,8 +65,7 @@ namespace QuironNUnitTest.Services
             EspacoDto espaco = new EspacoDto("Espaço Teste FindById");
             _espacoService.Create(espaco);
 
-            EspacoDto espacoPesquisa = _espacoService.FindById(espaco.Id);
-            Assert.IsNotNull(espacoPesquisa, "O espaço não foi retornado.");
+            Assert.IsNotNull(_espacoService.FindById(espaco.Id));
         }
 
         [Test]
@@ -86,8 +74,7 @@ namespace QuironNUnitTest.Services
             EspacoDto espaco = new EspacoDto("Espaço Teste FindByDescricao");
             _espacoService.Create(espaco);
 
-            EspacoDto espacoPesquisa = _espacoService.FindByDescricao(espaco.Descricao);
-            Assert.IsNotNull(espacoPesquisa, "O espaço não foi retornado.");
+            Assert.IsNotNull(_espacoService.FindByDescricao(espaco.Descricao));
         }
     }
 }

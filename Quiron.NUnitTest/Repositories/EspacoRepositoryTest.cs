@@ -20,9 +20,9 @@ namespace QuironNUnitTest.Repositories
             Espaco espaco = new Espaco("Espaço Teste Create");
             _espacoRepository.Create(espaco);
 
-            Espaco novoEspaco = _espacoRepository.FindBy(e => e.Id.Equals(espaco.Id));
+            Espaco novoEspaco = _espacoRepository.FindById(espaco.Id);
 
-            Assert.IsNotNull(novoEspaco, "Espaço não foi cadastrado.");
+            Assert.IsNotNull(novoEspaco);
         }
 
         [Test]
@@ -31,34 +31,31 @@ namespace QuironNUnitTest.Repositories
             Espaco espaco = new Espaco("Espaço Teste Update");
             _espacoRepository.Create(espaco);
 
-            Espaco espacoCriado = _espacoRepository.FindBy(e => e.Id.Equals(espaco.Id));
-            espacoCriado.Descricao = "Espaco Atualizado";
+            espaco.Descricao = "Espaco Atualizado";
+            _espacoRepository.Update(espaco);
 
-            _espacoRepository.Update(espacoCriado);
             Espaco espacoAtualizado = _espacoRepository.FindBy(e => e.Descricao.Equals("Espaco Atualizado"));
 
-            Assert.IsNotNull(espacoAtualizado, "Espaço não foi atualizado.");
+            Assert.IsNotNull(espacoAtualizado);
         }
 
         [Test]
         public void RemoveTest()
         {
-            Espaco espaco = new Espaco("Espaço Teste Delete");
+            Espaco espaco = new Espaco("Espaço Teste Remove");
             _espacoRepository.Create(espaco);
 
-            Espaco espacoCriado = _espacoRepository.FindBy(e => e.Id.Equals(espaco.Id));
+            _espacoRepository.Remove(espaco);
+            Espaco espacoRemovido = _espacoRepository.FindById(espaco.Id);
 
-            _espacoRepository.Remove(espacoCriado);
-            Espaco espacoRemovido = _espacoRepository.FindBy(e => e.Id.Equals(espacoCriado.Id));
-
-            Assert.IsNull(espacoRemovido, "Espaço não foi removido.");
+            Assert.IsNull(espacoRemovido);
         }
 
         [Test]
         public void GetAllTest()
         {
             IQueryable<Espaco> espacos = _espacoRepository.GetAll();
-            Assert.IsNotNull(espacos, "Não foram retornados todos os espaços.");
+            Assert.IsNotNull(espacos);
         }
 
         [Test]
@@ -68,7 +65,17 @@ namespace QuironNUnitTest.Repositories
             _espacoRepository.Create(espaco);
 
             Espaco espacoPesquisa = _espacoRepository.FindBy(e => e.Id.Equals(espaco.Id));
-            Assert.IsNotNull(espacoPesquisa, "O espaço não foi retornado.");
+            Assert.IsNotNull(espacoPesquisa);
+        }
+
+        [Test]
+        public void FindByIdTest()
+        {
+            Espaco espaco = new Espaco("Espaço Teste FindById");
+            _espacoRepository.Create(espaco);
+
+            Espaco espacoPesquisa = _espacoRepository.FindById(espaco.Id);
+            Assert.IsNotNull(espacoPesquisa);
         }
 
         [Test]
@@ -78,7 +85,7 @@ namespace QuironNUnitTest.Repositories
             _espacoRepository.Create(espaco);
 
             IQueryable<Espaco> espacos = _espacoRepository.FindAllBy(e => e.Id.Equals(espaco.Id));
-            Assert.IsNotNull(espacos, "Não foram retornados todos os espaços.");
+            Assert.IsNotNull(espacos);
         }
     }
 }
