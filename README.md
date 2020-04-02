@@ -9,3 +9,12 @@ Vídeos:
 04 - Infra: https://youtu.be/2LMRmwcrjLc </br>
 05 - Migration: https://youtu.be/991ucu2JQow </br>
 06 - NUnitTest: https://youtu.be/m70ZEZrSl6g </br>
+
+Tecnologias utilizadas:
+
+C# .Net Core: https://docs.microsoft.com/pt-br/dotnet/core/ </br>
+Auto Mapper: https://automapper.org/ </br>
+OData: https://www.odata.org/ </br>
+Swagger: https://swagger.io/ </br>
+NUnit: https://nunit.org/ </br>
+Entity Framework Core: https://docs.microsoft.com/pt-br/ef/ </br>
