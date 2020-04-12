@@ -2,34 +2,34 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Quiron.Data.Context;
 
 namespace Quiron.Data.Migrations
 {
     [DbContext(typeof(QuironContext))]
-    [Migration("20200305192619_InitialMigration")]
+    [Migration("20200412202120_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.2")
-                .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn)
+                .HasAnnotation("ProductVersion", "5.0.0-preview.2.20159.4")
+                .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             modelBuilder.Entity("Quiron.Domain.Entities.Espaco", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("uuid");
 
                     b.Property<string>("Descricao")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
 
@@ -38,17 +38,17 @@ namespace Quiron.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("a1dad22f-7745-445a-bd37-ab1b5bf6f993"),
+                            Id = new Guid("2c221e33-bcb0-46ab-89df-2c53577dc70b"),
                             Descricao = "Salão de Festas"
                         },
                         new
                         {
-                            Id = new Guid("efdd12fe-6a7f-482f-af2f-c2395188bcc7"),
+                            Id = new Guid("442e9257-aa8f-4790-b8d5-ef74038ec504"),
                             Descricao = "Piscina"
                         },
                         new
                         {
-                            Id = new Guid("c1d514db-6c2b-47eb-bbe2-b6a3cc3ec25b"),
+                            Id = new Guid("9cb1e11d-9bb4-4abb-babd-4439a8da3751"),
                             Descricao = "Churrasqueira"
                         });
                 });

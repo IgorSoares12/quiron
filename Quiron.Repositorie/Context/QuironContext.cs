@@ -36,7 +36,7 @@ namespace Quiron.Data.Context
         {
             if (_configuration != null)
             {
-                optionsBuilder.UseSqlServer(_configuration.GetConnectionString("DefaultConnection"));
+                optionsBuilder.UseNpgsql(_configuration.GetConnectionString("DefaultConnection"));
             }
         }
     }

@@ -15,7 +15,7 @@ namespace QuironNUnitTest.Comum
             if (quironContext == null)
             {
                 DbContextOptions<QuironContext> dbContextOptions = new DbContextOptionsBuilder<QuironContext>()
-                    .UseSqlServer("Data Source=GLERYSTON-PC\\SQLEXPRESS;Initial Catalog=Quiron;Persist Security Info=True;User ID=sa;Password=1234")
+                    .UseNpgsql("Host=127.0.0.1;Database=Quiron;Username=postgres;Password=1234;")
                     .Options;
 
                 quironContext = new QuironContext(dbContextOptions);
