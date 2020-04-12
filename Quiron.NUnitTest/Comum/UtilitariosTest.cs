@@ -4,7 +4,7 @@ using Quiron.Data.Context;
 using Quiron.Service.AutoMapper;
 using QuironNUnitTest.Infra;
 
-namespace QuironNUnitTest.Comun
+namespace QuironNUnitTest.Comum
 {
     class UtilitariosTest
     {

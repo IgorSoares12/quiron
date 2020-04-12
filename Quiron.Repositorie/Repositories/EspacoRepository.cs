@@ -1,4 +1,4 @@
-﻿using Quiron.Data.Commun;
+﻿using Quiron.Data.Comun;
 using Quiron.Data.Context;
 using Quiron.Domain.Entities;
 using Quiron.Domain.Interfaces.Data;

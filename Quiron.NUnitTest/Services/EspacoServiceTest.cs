@@ -5,7 +5,7 @@ using Quiron.Domain.Dto;
 using Quiron.Domain.Interfaces.Data;
 using Quiron.Domain.Interfaces.Services;
 using Quiron.Service.Services;
-using QuironNUnitTest.Comun;
+using QuironNUnitTest.Comum;
 
 namespace QuironNUnitTest.Services
 {
