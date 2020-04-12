@@ -6,7 +6,7 @@ using System;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace Quiron.Data.Commun
+namespace Quiron.Data.Comun
 {
     public abstract class Repository<TModel> : IRepository<TModel> where TModel : Entity
     {

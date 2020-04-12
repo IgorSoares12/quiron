@@ -2,7 +2,7 @@
 using Quiron.Data.Repositories;
 using Quiron.Domain.Entities;
 using Quiron.Domain.Interfaces.Data;
-using QuironNUnitTest.Comun;
+using QuironNUnitTest.Comum;
 using System.Linq;
 
 namespace QuironNUnitTest.Repositories
