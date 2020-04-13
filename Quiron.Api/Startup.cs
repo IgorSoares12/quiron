@@ -2,11 +2,13 @@ using AutoMapper;
 using Microsoft.AspNet.OData.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Quiron.Api.Configuracoes;
 using Quiron.CrossCutting;
+using Quiron.Data.Context;
 using Quiron.Service.AutoMapper;
 
 namespace Quiron.Api
@@ -18,6 +20,11 @@ namespace Quiron.Api
             Configuration = configuration;
             Version = Configuration.GetValue<string>("Application:Version");
             Name = Configuration.GetValue<string>("Application:Name");
+
+            using (var context = new QuironContext(Configuration))
+            {
+                context.Database.Migrate();
+            }
         }
 
         public IConfiguration Configuration { get; }
@@ -48,7 +55,7 @@ namespace Quiron.Api
             app.UseSwaggerUI(s =>
             {
                 s.EnableFilter();
-                s.DocumentTitle = Name + " | Documentação";
+                s.DocumentTitle = Name + " | Documenta&ccedil;&atilde;o";
                 s.InjectStylesheet("/swagger-ui/custom.css");
                 s.SwaggerEndpoint("/swagger/v" + Version + "/swagger.json", Name + " V" + Version);
             });
