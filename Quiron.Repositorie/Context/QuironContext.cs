@@ -25,11 +25,17 @@ namespace Quiron.Data.Context
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.ApplyConfiguration(new EspacoConfig());
+            modelBuilder.ApplyConfiguration(new EstadoConfig());
 
             modelBuilder.Entity<Espaco>().HasData(
                 new Espaco("Salão de Festas"),
                 new Espaco("Piscina"),
                 new Espaco("Churrasqueira"));
+
+            modelBuilder.Entity<Estado>().HasData(
+                new Estado("CE", "Ceara"),
+                new Estado("SP","Sao Paulo"),
+                new Estado("RJ", "Rio de Janeiro"));
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

@@ -9,6 +9,7 @@ namespace Quiron.CrossCutting
         public static void RegisterService(this IServiceCollection services)
         {
             services.AddScoped<IEspacoService, EspacoService>();
+            services.AddScoped<IEstadoService, EstadoService>();
         }
     }
 }

@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "082657eb-ae21-4906-ab81-64b581ad973e",
+		"_postman_id": "6e20137d-ae1a-40d7-841e-a4c8cead5a47",
 		"name": "Quiron",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -14,7 +14,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "33d904b6-338a-48c9-b14f-7c521454175a",
+								"id": "40b51601-a1d9-4a55-90ee-021f5f08164e",
 								"exec": [
 									"tests[\"status é igual a 200\"] = responseCode.code === 200;",
 									"",
@@ -54,7 +54,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "33d904b6-338a-48c9-b14f-7c521454175a",
+								"id": "045e51b2-9e95-4d53-8a5a-62c37d5b0a8f",
 								"exec": [
 									"tests[\"status é igual a 200\"] = responseCode.code === 200;",
 									"",
@@ -93,7 +93,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "33d904b6-338a-48c9-b14f-7c521454175a",
+								"id": "7b35fde3-ec02-43bf-9a64-29ae59dad8d8",
 								"exec": [
 									"tests[\"status é igual a 200\"] = responseCode.code === 200;",
 									"",
@@ -138,7 +138,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "33d904b6-338a-48c9-b14f-7c521454175a",
+								"id": "50e9e162-be17-4776-9da7-f7971752205c",
 								"exec": [
 									"tests[\"status é igual a 200\"] = responseCode.code === 200;",
 									"",
@@ -183,7 +183,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "33d904b6-338a-48c9-b14f-7c521454175a",
+								"id": "cd3dcd98-120e-4566-ac26-c2794fd01e0d",
 								"exec": [
 									"tests[\"status é igual a 200\"] = responseCode.code === 200;",
 									"",
@@ -228,7 +228,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "33d904b6-338a-48c9-b14f-7c521454175a",
+								"id": "47533d75-a203-4266-88d5-72b9deed15f3",
 								"exec": [
 									"tests[\"status é igual a 200\"] = responseCode.code === 200;",
 									"",
@@ -273,7 +273,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "33d904b6-338a-48c9-b14f-7c521454175a",
+								"id": "dbc5ba08-770e-4e1b-bf76-0cc98221a6b1",
 								"exec": [
 									"tests[\"status é igual a 200\"] = responseCode.code === 200;",
 									"",
@@ -318,7 +318,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "33d904b6-338a-48c9-b14f-7c521454175a",
+								"id": "eeef80b0-a6df-463b-aed1-0c092fe465a5",
 								"exec": [
 									"tests[\"status é igual a 200\"] = responseCode.code === 200;",
 									"",
@@ -357,7 +357,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "33d904b6-338a-48c9-b14f-7c521454175a",
+								"id": "7237dbb6-f3f8-4008-a4d4-83d8d9ac4be4",
 								"exec": [
 									"tests[\"status é igual a 404\"] = responseCode.code === 404;",
 									"",
@@ -396,7 +396,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "33d904b6-338a-48c9-b14f-7c521454175a",
+								"id": "e36f29fb-3ddd-4e03-bd6d-ca47b33a342f",
 								"exec": [
 									"tests[\"status é igual a 200\"] = responseCode.code === 200;"
 								],
@@ -441,7 +441,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "33d904b6-338a-48c9-b14f-7c521454175a",
+								"id": "ff7aa871-345a-4044-9cbf-c718cd477d92",
 								"exec": [
 									"tests[\"status é igual a 400\"] = responseCode.code === 400;"
 								],
@@ -486,7 +486,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "33d904b6-338a-48c9-b14f-7c521454175a",
+								"id": "f2fecf84-e530-40cd-abc4-76cc2f6b79ec",
 								"exec": [
 									"tests[\"status é igual a 200\"] = responseCode.code === 200;"
 								],
@@ -531,7 +531,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "33d904b6-338a-48c9-b14f-7c521454175a",
+								"id": "65c3d53c-8460-47e7-aeee-7d3ca1d127b0",
 								"exec": [
 									"tests[\"status é igual a 404\"] = responseCode.code === 404;",
 									"",
@@ -585,7 +585,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "33d904b6-338a-48c9-b14f-7c521454175a",
+								"id": "25ac8705-cb26-4982-8a35-faf29b503ce3",
 								"exec": [
 									"tests[\"status é igual a 404\"] = responseCode.code === 404;",
 									"",
@@ -639,7 +639,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "33d904b6-338a-48c9-b14f-7c521454175a",
+								"id": "fd6339f7-afb5-4268-bcff-64fca6cf12b0",
 								"exec": [
 									"tests[\"status é igual a 200\"] = responseCode.code === 200;"
 								],
@@ -676,7 +676,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "33d904b6-338a-48c9-b14f-7c521454175a",
+								"id": "255dece5-d5c7-468e-96ff-a340bc7a4831",
 								"exec": [
 									"tests[\"status é igual a 404\"] = responseCode.code === 404;"
 								],
@@ -701,6 +701,711 @@
 							],
 							"path": [
 								"Espaco",
+								"00000000-0000-0000-0000-000000000000"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Estado",
+			"item": [
+				{
+					"name": "/Estado all",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d783a36f-2ad6-434d-9467-e567c9eba86c",
+								"exec": [
+									"tests[\"status é igual a 200\"] = responseCode.code === 200;",
+									"",
+									"try { ",
+									"    responseJSON = JSON.parse(responseBody); ",
+									"    tests['resposta é um JSON válido'] = true;",
+									"}",
+									"catch (e) { ",
+									"    responseJSON = {}; ",
+									"    tests['resposta não é um JSON válido'] = false;",
+									"}",
+									"",
+									"pm.environment.set(\"idTest\", responseJSON[0].id);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/Estado",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Estado"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/OData/Estado all",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "74ff1870-30af-4faa-8fec-1fe8c9f59bda",
+								"exec": [
+									"tests[\"status é igual a 200\"] = responseCode.code === 200;",
+									"",
+									"try { ",
+									"    responseJSON = JSON.parse(responseBody); ",
+									"    tests['resposta é um JSON válido'] = true;",
+									"}",
+									"catch (e) { ",
+									"    responseJSON = {}; ",
+									"    tests['resposta não é um JSON válido'] = false;",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/OData/Estado",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"OData",
+								"Estado"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/OData/Estado?$top=1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "8490a570-2972-47a2-81ee-178173269c98",
+								"exec": [
+									"tests[\"status é igual a 200\"] = responseCode.code === 200;",
+									"",
+									"try { ",
+									"    responseJSON = JSON.parse(responseBody); ",
+									"    tests['resposta é um JSON válido'] = true;",
+									"}",
+									"catch (e) { ",
+									"    responseJSON = {}; ",
+									"    tests['resposta não é um JSON válido'] = false;",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/OData/Estado?$top=1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"OData",
+								"Estado"
+							],
+							"query": [
+								{
+									"key": "$top",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/OData/Estado?$skip=2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f58eb357-dfb4-4a1a-91ee-2fc8f39ad73e",
+								"exec": [
+									"tests[\"status é igual a 200\"] = responseCode.code === 200;",
+									"",
+									"try { ",
+									"    responseJSON = JSON.parse(responseBody); ",
+									"    tests['resposta é um JSON válido'] = true;",
+									"}",
+									"catch (e) { ",
+									"    responseJSON = {}; ",
+									"    tests['resposta não é um JSON válido'] = false;",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/OData/Estado?$skip=2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"OData",
+								"Estado"
+							],
+							"query": [
+								{
+									"key": "$skip",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/OData/Estado?$count=true",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "4a5c96b4-c217-41ce-bd27-3ed9c2dd5410",
+								"exec": [
+									"tests[\"status é igual a 200\"] = responseCode.code === 200;",
+									"",
+									"try { ",
+									"    responseJSON = JSON.parse(responseBody); ",
+									"    tests['resposta é um JSON válido'] = true;",
+									"}",
+									"catch (e) { ",
+									"    responseJSON = {}; ",
+									"    tests['resposta não é um JSON válido'] = false;",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/OData/Estado?$count=true",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"OData",
+								"Estado"
+							],
+							"query": [
+								{
+									"key": "$count",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/OData/Estado?$select=descricao",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "210601d0-297e-4b07-bcbb-33d45e29a426",
+								"exec": [
+									"tests[\"status é igual a 200\"] = responseCode.code === 200;",
+									"",
+									"try { ",
+									"    responseJSON = JSON.parse(responseBody); ",
+									"    tests['resposta é um JSON válido.'] = true;",
+									"}",
+									"catch (e) { ",
+									"    responseJSON = {}; ",
+									"    tests['resposta não é um JSON válido.'] = false;",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/OData/Estado?$select=descricao",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"OData",
+								"Estado"
+							],
+							"query": [
+								{
+									"key": "$select",
+									"value": "descricao"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/OData/Estado?$filter=id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "0318daf2-8489-429f-a4dc-2744a025e436",
+								"exec": [
+									"tests[\"status é igual a 200\"] = responseCode.code === 200;",
+									"",
+									"try { ",
+									"    responseJSON = JSON.parse(responseBody); ",
+									"    tests['resposta é um JSON válido'] = true;",
+									"}",
+									"catch (e) { ",
+									"    responseJSON = {}; ",
+									"    tests['resposta não é um JSON válido'] = false;",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/OData/Estado?$filter=id eq {{idTest}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"OData",
+								"Estado"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "id eq {{idTest}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/Estado/{id} by id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1d5dbed2-1cf0-4e21-b0de-c11b1878e7a5",
+								"exec": [
+									"tests[\"status é igual a 200\"] = responseCode.code === 200;",
+									"",
+									"try { ",
+									"    responseJSON = JSON.parse(responseBody); ",
+									"    tests['resposta é um JSON válido'] = true;",
+									"}",
+									"catch (e) { ",
+									"    responseJSON = {}; ",
+									"    tests['resposta não é um JSON válido'] = false;",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/Estado/{{idTest}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Estado",
+								"{{idTest}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/Estado/{id} not found",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "4e3a9b64-25e3-4fb5-9bfc-23985eb3bbe5",
+								"exec": [
+									"tests[\"status é igual a 404\"] = responseCode.code === 404;",
+									"",
+									"try { ",
+									"    responseJSON = JSON.parse(responseBody); ",
+									"    tests['resposta é um JSON válido'] = true;",
+									"}",
+									"catch (e) { ",
+									"    responseJSON = {}; ",
+									"    tests['resposta não é um JSON válido'] = false;",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/Estado/00000000-0000-0000-0000-000000000000",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Estado",
+								"00000000-0000-0000-0000-000000000000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/Estado new",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "4bf546fb-3d99-4182-a24a-1b2b19deae0a",
+								"exec": [
+									"tests[\"status é igual a 200\"] = responseCode.code === 200;"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uf\": \"CE\",\r\n  \"descricao\": \"teste post api\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/Estado",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Estado"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/Estado new required field",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d80bdedd-8af0-403a-bbff-e4edb1185c95",
+								"exec": [
+									"tests[\"status é igual a 400\"] = responseCode.code === 400;"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/Estado",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Estado"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/Estado edit",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d35902fa-2114-430a-beaf-06fb34ce67b5",
+								"exec": [
+									"tests[\"status é igual a 200\"] = responseCode.code === 200;"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": \"{{idTest}}\",\r\n  \"uf\": \"CE\",\r\n  \"descricao\": \"teste put api\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/Estado",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Estado"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/Estado edit not found database",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "e0a7abe3-0d1b-401c-8d3b-a31edb104b12",
+								"exec": [
+									"tests[\"status é igual a 404\"] = responseCode.code === 404;",
+									"",
+									"try { ",
+									"    responseJSON = JSON.parse(responseBody); ",
+									"    tests['resposta é um JSON válido'] = true;",
+									"}",
+									"catch (e) { ",
+									"    responseJSON = {}; ",
+									"    tests['resposta não é um JSON válido'] = false;",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": \"00000000-0000-0000-0000-000000000000\",\r\n  \"uf\": \"CE\",\r\n  \"descricao\": \"teste put api\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/Estado",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Estado"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/Estado edit not found field",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "eb28f6c1-3054-4abd-8239-e409cabd1bd4",
+								"exec": [
+									"tests[\"status é igual a 404\"] = responseCode.code === 404;",
+									"",
+									"try { ",
+									"    responseJSON = JSON.parse(responseBody); ",
+									"    tests['resposta é um JSON válido'] = true;",
+									"}",
+									"catch (e) { ",
+									"    responseJSON = {}; ",
+									"    tests['resposta não é um JSON válido'] = false;",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uf\": \"CE\",\r\n  \"descricao\": \"teste put api\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/Estado",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Estado"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/Estado/{id} delete",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "918ebd8a-60ed-4957-bc99-36622a22d336",
+								"exec": [
+									"tests[\"status é igual a 200\"] = responseCode.code === 200;"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/Estado/{{idTest}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Estado",
+								"{{idTest}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/Estado/{id} delete not fount",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1091c3dc-7562-4aa8-a446-f7de78c66f99",
+								"exec": [
+									"tests[\"status é igual a 404\"] = responseCode.code === 404;"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/Estado/00000000-0000-0000-0000-000000000000",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Estado",
 								"00000000-0000-0000-0000-000000000000"
 							]
 						}
