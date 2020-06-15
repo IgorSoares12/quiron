@@ -10,6 +10,9 @@ namespace Quiron.Service.AutoMapper
         {
             CreateMap<Espaco, EspacoDto>()
                 .ReverseMap();
+
+            CreateMap<Estado, EstadoDto>()
+                .ReverseMap();
         }
     }
 }

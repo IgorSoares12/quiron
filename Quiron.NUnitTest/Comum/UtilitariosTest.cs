@@ -15,7 +15,7 @@ namespace QuironNUnitTest.Comum
             if (quironContext == null)
             {
                 DbContextOptions<QuironContext> dbContextOptions = new DbContextOptionsBuilder<QuironContext>()
-                    .UseNpgsql("Host=ec2-18-209-187-54.compute-1.amazonaws.com;Database=d948lujo4ribs2;Username=agvnvejhcubyzp;Password=7f4989a7bd9b6e83dd8843034b08aaac06400ee2daf40cc6385a5e00a8b85108;")
+                    .UseNpgsql("Host=127.0.0.1;Database=Quiron;Username=postgres;Password=1234;")
                     .Options;
 
                 quironContext = new QuironContext(dbContextOptions);
