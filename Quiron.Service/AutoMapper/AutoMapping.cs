@@ -11,8 +11,9 @@ namespace Quiron.Service.AutoMapper
             CreateMap<Espaco, EspacoDto>()
                 .ReverseMap();
 
-            CreateMap<Estado, EstadoDto>()
-                .ReverseMap();
+            CreateMap<Estado, EstadoDto>().
+                ForMember(dto => dto.Descricao, opt => opt.MapFrom(entity => entity.Descricao)).
+                ReverseMap();
         }
     }
 }
