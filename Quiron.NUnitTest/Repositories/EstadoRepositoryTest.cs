@@ -12,7 +12,7 @@ namespace QuironNUnitTest.Repositories
         private IEstadoRepository _estadoRepository;
 
         public EstadoRepositoryTest()
-            => _estadoRepository = new EstadoRepository(UtilitariosTest.GetContext());
+            => _estadoRepository = new EstadoRepository(UtilitariosTest.GetContext(), UtilitariosTest.GetMapper());
 
         [Test]
         public void CreateTest()

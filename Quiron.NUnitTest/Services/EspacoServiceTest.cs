@@ -18,7 +18,7 @@ namespace QuironNUnitTest.Services
         public EspacoServiceTest()
         {
             _mapper = UtilitariosTest.GetMapper();
-            _espacoRepository = new EspacoRepository(UtilitariosTest.GetContext());
+            _espacoRepository = new EspacoRepository(UtilitariosTest.GetContext(), _mapper);
             _espacoService = new EspacoService(_mapper, _espacoRepository);
         }
 
