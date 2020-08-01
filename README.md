@@ -1,5 +1,5 @@
-# Quiron
-Projeto para desenvolver o conhecimento dos participantes do projeto quiron.
+# quiron
+Projeto para desenvolver os conhecimentos em C# dos membros da equipe.
 
 ![Quiron](https://github.com/GlerystonMatos/Quiron/workflows/Quiron/badge.svg?branch=master)
 
@@ -17,6 +17,10 @@ Artigos:
 <a href='https://medium.com/@glerystonmatos/automa%C3%A7%C3%A3o-de-processos-com-github-actions-3efdeaf4919c'>Automação de Processos com GitHub Actions</a><br/>
 <a href='https://medium.com/@glerystonmatos/auto-mapper-com-net-core-9d09856059b3'>Auto Mapper com .Net Core</a>
 
-Gleryston Matos<br/>
+<b>Informações do Projeto</b>
+<br/>
+Versão do Visual Studio usada: 2019 Community.<br/>
+<br/>
+<a href="https://www.linkedin.com/in/glerystonmatos/" target="_blank">Gleryston Matos</a><br/>
 glerystonmatos@yahoo.com.br<br/>
-glerystonmatos@gmail.com
+glerystonmatos@gmail.com<br/>
