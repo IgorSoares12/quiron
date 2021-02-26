@@ -12,7 +12,7 @@ namespace QuironNUnitTest.Repositories
         private IEspacoRepository _espacoRepository;
 
         public EspacoRepositoryTest()
-            => _espacoRepository = new EspacoRepository(UtilitariosTest.GetContext(), UtilitariosTest.GetMapper());
+            => _espacoRepository = new EspacoRepository(UtilitariosTest.GetContext());
 
         [Test]
         public void CreateTest()

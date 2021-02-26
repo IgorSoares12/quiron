@@ -18,7 +18,7 @@ namespace QuironNUnitTest.Services
         public EstadoServiceTest()
         {
             _mapper = UtilitariosTest.GetMapper();
-            _estadoRepository = new EstadoRepository(UtilitariosTest.GetContext(), _mapper);
+            _estadoRepository = new EstadoRepository(UtilitariosTest.GetContext());
             _estadoService = new EstadoService(_mapper, _estadoRepository);
         }
 
