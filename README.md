@@ -5,8 +5,6 @@ Projeto para desenvolver os conhecimentos em C# dos membros da equipe.
 
 <a href='https://coveralls.io/github/GlerystonMatos/Quiron'><img src='https://coveralls.io/repos/github/GlerystonMatos/Quiron/badge.svg' alt='Coverage Status' /></a>
 
-<a href='https://quiron-api-prod.herokuapp.com/swagger/index.html'>Documentação Quiron</a>
-
 Artigos:
 
 <a href='https://medium.com/@glerystonmatos/apresenta%C3%A7%C3%A3o-projeto-quiron-706485e4dc74'>Apresentação do projeto</a><br/>
