@@ -15,9 +15,9 @@ namespace Quiron.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn)
-                .HasAnnotation("ProductVersion", "5.0.0-preview.5.20278.2")
-                .HasAnnotation("Relational:MaxIdentifierLength", 63);
+                .UseIdentityByDefaultColumns()
+                .HasAnnotation("Relational:MaxIdentifierLength", 63)
+                .HasAnnotation("ProductVersion", "5.0.2");
 
             modelBuilder.Entity("Quiron.Domain.Entities.Espaco", b =>
                 {
@@ -36,17 +36,17 @@ namespace Quiron.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("2104499d-ed03-4a2a-9995-c21c6c23ceaa"),
+                            Id = new Guid("699009e2-050a-43ed-bf00-8b383933b2d5"),
                             Descricao = "Salão de Festas"
                         },
                         new
                         {
-                            Id = new Guid("872a4818-ab40-4950-a297-9ea81983495f"),
+                            Id = new Guid("4e58e765-95ff-4815-8968-3c5199053b20"),
                             Descricao = "Piscina"
                         },
                         new
                         {
-                            Id = new Guid("9a4ae6c2-0e91-459e-9d2b-fb755c952195"),
+                            Id = new Guid("bb12a32a-97f2-451e-8bbd-84ee3abbb39a"),
                             Descricao = "Churrasqueira"
                         });
                 });
@@ -72,19 +72,19 @@ namespace Quiron.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("24f63b78-c0da-4f6c-a817-14844384edc4"),
+                            Id = new Guid("578c1771-e576-47e7-9c0e-7b84e250758d"),
                             Descricao = "Ceara",
                             Uf = "CE"
                         },
                         new
                         {
-                            Id = new Guid("970bfe8c-5050-4a43-bc9a-ed0a38098691"),
+                            Id = new Guid("08e9b674-c360-4980-b52e-4ff7f5cc722c"),
                             Descricao = "Sao Paulo",
                             Uf = "SP"
                         },
                         new
                         {
-                            Id = new Guid("fa50ba2f-b9c8-4092-bf0f-588cca61463c"),
+                            Id = new Guid("262e36b2-2951-48e3-9ccc-5c3e06d846b9"),
                             Descricao = "Rio de Janeiro",
                             Uf = "RJ"
                         });

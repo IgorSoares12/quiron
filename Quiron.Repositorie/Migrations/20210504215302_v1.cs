@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Quiron.Data.Migrations
 {
-    public partial class InitialMigration : Migration
+    public partial class v1 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -37,9 +37,9 @@ namespace Quiron.Data.Migrations
                 columns: new[] { "Id", "Descricao" },
                 values: new object[,]
                 {
-                    { new Guid("2104499d-ed03-4a2a-9995-c21c6c23ceaa"), "Salão de Festas" },
-                    { new Guid("872a4818-ab40-4950-a297-9ea81983495f"), "Piscina" },
-                    { new Guid("9a4ae6c2-0e91-459e-9d2b-fb755c952195"), "Churrasqueira" }
+                    { new Guid("699009e2-050a-43ed-bf00-8b383933b2d5"), "Salão de Festas" },
+                    { new Guid("4e58e765-95ff-4815-8968-3c5199053b20"), "Piscina" },
+                    { new Guid("bb12a32a-97f2-451e-8bbd-84ee3abbb39a"), "Churrasqueira" }
                 });
 
             migrationBuilder.InsertData(
@@ -47,9 +47,9 @@ namespace Quiron.Data.Migrations
                 columns: new[] { "Id", "Descricao", "Uf" },
                 values: new object[,]
                 {
-                    { new Guid("24f63b78-c0da-4f6c-a817-14844384edc4"), "Ceara", "CE" },
-                    { new Guid("970bfe8c-5050-4a43-bc9a-ed0a38098691"), "Sao Paulo", "SP" },
-                    { new Guid("fa50ba2f-b9c8-4092-bf0f-588cca61463c"), "Rio de Janeiro", "RJ" }
+                    { new Guid("578c1771-e576-47e7-9c0e-7b84e250758d"), "Ceara", "CE" },
+                    { new Guid("08e9b674-c360-4980-b52e-4ff7f5cc722c"), "Sao Paulo", "SP" },
+                    { new Guid("262e36b2-2951-48e3-9ccc-5c3e06d846b9"), "Rio de Janeiro", "RJ" }
                 });
         }
 
